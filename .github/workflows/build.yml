@@ -69,6 +69,7 @@ jobs:
           done
       - name: 构建固件
         run: |
+          chmod +x ./scripts/build.sh
           ./scripts/build.sh "${{ needs.detect.outputs.version }}" 2
       - name: 发布到 Release
         env:
