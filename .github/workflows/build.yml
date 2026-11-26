@@ -52,7 +52,7 @@ jobs:
     if: needs.detect.outputs.version != ''
     runs-on: ubuntu-22.04
     timeout-minutes: 720
-    env:
+   # env:
      # http_proxy: http://192.168.101.1:9001
      # https_proxy: http://192.168.101.1:9001
      # no_proxy: 127.0.0.1,localhost
